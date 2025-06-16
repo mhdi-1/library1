@@ -9,5 +9,5 @@ with app.app_context():
     db.create_all()
     seed_data()  # تعبئة بيانات مبدئية
 
-if __name__ == '__main__':
-    app.run(debug=True)
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=3000)
